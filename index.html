@@ -8,15 +8,22 @@
   <meta name="author" content="Civic Lens">
 
 <!-- ADD Open Graph Meta for title, description, image, url, type -->
- <meta property="og:title" content="Civic Lens: See Clearly. Know Deeply. Act Justly.">
+ <meta property="og:title" content="Civic Lens">
+ <meta property="og:description" content="See Clearly. Know Deeply. Act Justly.">
+ <!--I put whatever I wanted for the content of the image since there were no images available for this assignment-->
+ <meta property="og:image" content="https://ih1.redbubble.net/image.5322459816.0693/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg">
+ <meta property="og:url" content="https://ozzyozbri.github.io/civic-lens/">
+<meta property="og:type" content="website">
 
 <!-- ADD link to stylesheet -->
-
+  <link rel="stylesheet" href="styles.css">
   <title>Civic Lens</title>
 </head>
+
 <body>
 <!-- ADD semantic and validated HTML -->
 <!-- ADD skip to main content -->
+  <a class="skip-to-content-link" href="#main">Skip to content</a>
     <button id="theme-toggle" aria-label="Toggle light/dark mode">
       <svg width="35px" height="35px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
         <defs><clipPath id="a"><path d="m18.512 18.512h62.977v62.977h-62.977z"/></clipPath></defs>
@@ -24,7 +31,7 @@
       </svg>
     </button>
 
-      Civic Lens
+      <h1>Civic Lens</h1>
       <p class="tagline">See Clearly. Know Deeply. Act Justly.</p>
       
       <nav class="mobile-nav" aria-label="Mobile Navigation">
@@ -37,88 +44,121 @@
           <li><a href="#social">Social</a></li>
         </ul>
       </nav>
+      <main>
+        <section id="welcome">
+          <h2>Welcome to Civic Lens</h2>
+          <p>We are an independent news organization dedicated to unbiased reporting, investigative journalism, and truth-driven storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and shine light on the systems that shape our society.</p>
+          <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote>
+        </section>
       
-      Welcome to Civic Lens
-        We are an independent news organization dedicated to unbiased reporting, investigative journalism, and truth-driven storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and shine light on the systems that shape our society.</p>
-        <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote>
+        <section id="breaking">
+          <h2>Breaking News</h2>
 
-      Breaking News
-
-        Federal Investigation Launched into Water Mismanagement in the Southwest
-        The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.
-        videos/water-management.mp4
+          <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
+          <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.
+          videos/water-management.mp4</p>
+          
+          <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
+          <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.
+          videos/voter-suppression.mp4</p>
+        </section>
         
-        Voter Suppression Bill Faces Pushback in State Supreme Court
-        Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.
-        videos/voter-suppression.mp4
-        
-      Featured Articles
-        
-        The Cost of Silence: Whistleblower Stories from Inside Tech Giants
-        Former employees speak out about ethical breaches in data privacy and surveillance.
-        
-        Unequal Justice: How Bail Systems Harm the Poor
-        An investigative series on cash bail and its disproportionate impact.
-        
-        Invisible Work: The Lives of Migrant Caregivers
-        Humanizing the labor that keeps households and economies afloat.
-        
-        Redlined Still: A New Map of Modern-Day Housing Discrimination
-        Data visualization showing systemic inequality in real estate today.
-        
-        Climate Injustice: Who Pays for Pollution?
-        Communities of color bear the brunt of environmental damage.
-        
-        Teaching Under Fire: The Fight for Inclusive Education
-        Teachers navigate book bans, curriculum restrictions, and culture wars.
-        
-        Food Deserts and Corporate Abandonment
-        Why access to nutrition is a zip code lottery.
-        
-        Policing Mental Health: A Broken Response System
-        Examining police interactions with those in crisis.
-        
-        The Disinformation Economy
-        Tracing profit motives behind fake news empires.
-        
-        Facing the Algorithm: AI and Racial Bias
-        The coded inequalities that shape our lives.
-        
-        The Voting Maze
-        A guide to understanding your rights amid changing laws.
-        
-        After the Cameras Leave: Long-Term Crisis Recovery
-        Rebuilding trust and infrastructure in disaster-hit communities.
-        
-        
-      Stay Informed. Stay Empowered.
-        Receive text messages with the news you want to know.
-        
-        Name
-        
-        Mobile
-        
-        Notification Preferences
-        
-        Breaking News
-        Politics
-        Weather
-        Sports
-        Entertainment
-        World
-        Financial
-        
-        Subscribe
+        <section id="featured">
+          <h2>Featured Articles</h2>
+          
+          <h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants</h3>
+          <p>Former employees speak out about ethical breaches in data privacy and surveillance.</p>
+          
+          <h3>Unequal Justice: How Bail Systems Harm the Poor</h3>
+          <p>An investigative series on cash bail and its disproportionate impact.</p>
+          
+          <h3>Invisible Work: The Lives of Migrant Caregivers</h3>
+          <p>Humanizing the labor that keeps households and economies afloat.</p>
+          
+          <h3>Redlined Still: A New Map of Modern-Day Housing Discrimination</h3>
+          <p>Data visualization showing systemic inequality in real estate today.</p>
+          
+          <h3>Climate Injustice: Who Pays for Pollution?</h3>
+          <p>Communities of color bear the brunt of environmental damage.</p>
+          
+          <h3>Teaching Under Fire: The Fight for Inclusive Education</h3>
+          <p>Teachers navigate book bans, curriculum restrictions, and culture wars.</p>
+          
+          <h3>Food Deserts and Corporate Abandonment</h3>
+          <p>Why access to nutrition is a zip code lottery.</p>
+          
+          <h3>Policing Mental Health: A Broken Response System</h3>
+          <p>Examining police interactions with those in crisis.</p>
+          
+          <h3>The Disinformation Economy</h3>
+          <p>Tracing profit motives behind fake news empires.</p>
+          
+          <h3>Facing the Algorithm: AI and Racial Bias</h3>
+          <p>The coded inequalities that shape our lives.</p>
+          
+          <h3>The Voting Maze</h3>
+          <p>A guide to understanding your rights amid changing laws.</p>
+          
+          <h3>After the Cameras Leave: Long-Term Crisis Recovery</h3>
+          <p>Rebuilding trust and infrastructure in disaster-hit communities.</p>
+        </section>
       
-      Follow Us
-        Twitter/X
-        Instagram
-        YouTube
-        TikTok
-        LinkedIn
         
-        &copy; 2025 Civic Lens. All rights reserved.
-        
+        <section id="contactUs">
+          <h2>Stay Informed. Stay Empowered.</h2>
+          <p>Receive text messages with the news you want to know.</p>
+          <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+            <!--Full Name-->
+            <label for="fullName">Name</label>
+            <input type="text" id="fullName" name="Full Name: " required>
+            <!--Phone Number-->
+            <label for="phone">Mobile</label>
+            <input type="tel" id="phone" name="phone" required>
+            <!--Notification Preferences-->
+            <fieldset>
+              <legend>Notification Preferences</legend>
+              <input type="checkbox" id="preferBreakingNews" value="Breaking News" name="Preferred Notifications: " checked>
+              <label for="preferBreakingNews">Breaking News</label>
+
+              <input type="checkbox" id="preferPolitics" value="Politics" name="Preferred Notifications: ">
+              <label for="preferPolitics">Politics</label>
+
+              <input type="checkbox" id="preferWeather" value="Weather" name="Preferred Notifications: ">
+              <label for="preferWeather">Weather</label>
+
+              <input type="checkbox" id="preferSports" value="Sports" name="Preferred Notifications: ">
+              <label for="preferSports">Sports</label>
+
+              <input type="checkbox" id="preferEntertainment" value="Entertainment" name="Preferred Notifications: ">
+              <label for="preferEntertainment">Entertainment</label>
+
+              <input type="checkbox" id="preferWorld" value="World" name="Preferred Notifications: ">
+              <label for="preferWorld">World</label>
+
+              <input type="checkbox" id="preferfinancial" value="Financial" name="Preferred Notifications: ">
+              <label for="preferfinancial">Financial</label>
+            </fieldset>
+
+            <!--Submit Button-->
+            <input type="submit" value="Subscribe">
+          </form>
+        </section>
+      </main>
+      
+      
+      <footer>
+        <section id="followUs">
+          <h2>Follow Us</h2>
+          <ul>
+            <li><a href="#">Twitter/X</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">TikTok</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+          <small>&copy; 2025 Civic Lens. All rights reserved.</small>
+        </section>
+      </footer> 
         
   <script>
     const toggleButton = document.getElementById('theme-toggle');
