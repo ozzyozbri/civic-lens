@@ -169,20 +169,9 @@ body {
   margin: 20px;
 }
 
-#breaking-news-first {
-  background-color: #E63946;
-  color: #F1FAEE;
-  margin: 10px;
-  padding: 15px;
-  width: 400px;
-}
-
-#breaking-news-second {
-  background-color: #E63946;
-  color: #F1FAEE;
-  margin: 10px;
-  padding: 15px;
-  width: 400px;
+#breaking-news {
+  display: grid;
+  grid-row: 2;
 }
 
 /* Global Text Styles */
@@ -191,10 +180,11 @@ h1, h2, h3, nav a {
   font-family: 'Merriweather', serif;
 }
 
-p {
+p, small, form, form button {
   font-family: "Source Sans 3", sans-serif;
   line-height: 1.5;
 }
+
 
 h1 {
   font-size: 48px;
@@ -211,6 +201,7 @@ h2 {
   font-size: 25px;
   padding-top: 15px;
   padding-bottom: 15px;
+  display: inline-block;
 }
 
 h3 {
@@ -219,9 +210,91 @@ h3 {
   /* Line between text */
   padding-bottom: 8px; 
   margin-bottom: 8px; 
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid black;
 }
 
+#breaking-news-first, #breaking-news-second {
+  background-color: #E63946;
+  color: #F1FAEE;
+  margin: 10px;
+  padding: 15px;
+  width: 400px;
+  border: 0.5px solid black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#breaking-news h3 {
+  /* Line between text */
+  padding-bottom: 8px; 
+  margin-bottom: 8px; 
+  border-bottom: 1px solid #F1FAEE;
+}
+
+
+#featured-articles section {
+  border: 0.5px solid black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  margin: 15px;
+  padding: 12px;
+}
+
+/*Form Styles */
+form {
+  background-color: #E63946;
+  color: #F1FAEE;
+  margin: 20px;
+  padding: 15px;
+  border: 0.5px solid black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+} 
+
+fieldset {
+  border: 1px solid #1D3557;
+  margin: 10px;
+  padding: 5px;
+}
+
+form button {
+  background-color: #1D3557;
+  color: #F1FAEE;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  margin: 10px;
+  padding: 15px;
+  font-size: 20px;
+}
+
+
+/* Footer Styles */
+footer {
+  background-color: #1D3557;
+  color: #F1FAEE;
+  padding: 20px;
+}
+
+.followLinks a {
+  background-color: #E63946;
+  color: #F1FAEE;
+  text-decoration: none;
+  width: 15px;
+  height: 15px;
+  margin-right: 12px;
+  padding: 10px;
+}
+
+.followLinks {
+  display: flex;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  Padding-bottom: 10px;
+}
+
+small {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
 
 /* ///ADD/// medium styles 620px */
 
