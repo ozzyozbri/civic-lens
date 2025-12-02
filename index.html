@@ -30,8 +30,8 @@
         <g clip-path="url(#a)"><path d="m65.098 68.164c-9.2812 7.7266-23.09 7.2422-31.797-1.4648-8.707-8.7031-9.1953-22.516-1.4648-31.793 0.74609-0.89844 2.1016-0.96875 2.9258-0.14453l30.473 30.477c0.82422 0.82422 0.75391 2.1797-0.13672 2.9258m7.168-40.43c-12.297-12.297-32.234-12.297-44.531 0-12.297 12.301-12.297 32.234 0 44.531s32.234 12.297 44.531 0 12.297-32.23 0-44.531" fill="#333" fill-rule="evenodd"/></g>
       </svg>
     </button>
-
-      <h1>Civic Lens</h1>
+      <header>
+        <h1>Civic Lens</h1>
       <p class="tagline">See Clearly. Know Deeply. Act Justly.</p>
       
       <nav class="mobile-nav" aria-label="Mobile Navigation">
@@ -39,11 +39,13 @@
         <label for="menu-toggle" class="menu-button">Menu</label>
         <ul class="menu">
           <li><a href="#breaking-news">Breaking News</a></li>
-          <li><a href="#featured-aticles">Featured Articles</a></li>
+          <li><a href="#featured-articles">Featured Articles</a></li>
           <li><a href="#alerts">Alerts</a></li>
           <li><a href="#social">Social</a></li>
         </ul>
       </nav>
+      </header>
+      
       <main>
         <section id="welcome">
           <h2>Welcome to Civic Lens</h2>
@@ -51,19 +53,28 @@
           <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote>
         </section>
       
-        <section id="breaking">
+        <section id="breaking-news">
           <h2>Breaking News</h2>
-
-          <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
-          <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.
-          videos/water-management.mp4</p>
           
-          <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
-          <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.
-          videos/voter-suppression.mp4</p>
+          <section id="breaking-news-first">
+            <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
+            <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.</p>
+            <video width="400" height="250" controls preload="auto">
+              <source src="videos/water-management.mp4" type="video/mp4">
+            </video>
+          </section>
+          
+          <section id="breaking-news-second">
+            <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
+            <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.</p>
+            <video width="400" height="250" controls preload="auto">
+              <source src="videos/voter-suppression.mp4" type="video/mp4">
+            </video>
+          </section>
+          
         </section>
         
-        <section id="featured">
+        <section id="featured-articles">
           <h2>Featured Articles</h2>
           
           <h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants</h3>
@@ -104,7 +115,7 @@
         </section>
       
         
-        <section id="contactUs">
+        <section id="alerts">
           <h2>Stay Informed. Stay Empowered.</h2>
           <p>Receive text messages with the news you want to know.</p>
           <form action="https://wp.zybooks.com/form-viewer.php" method="post">
@@ -147,7 +158,7 @@
       
       
       <footer>
-        <section id="followUs">
+        <section id="social">
           <h2>Follow Us</h2>
           <ul>
             <li><a href="#">Twitter/X</a></li>
