@@ -94,7 +94,7 @@ body.dark-mode {
 
 
 
-/* ///ADD/// Skip Link Styles */
+/*Skip Link Styles */
 .skip-to-content-link {
   background: #FFFFFF;
   color: #1D3557;
@@ -108,11 +108,13 @@ body.dark-mode {
   font-weight: bold;
 }
 
+
+
 .skip-to-content-link:focus {
   transform: translateY(0%);
 }
 
-/* ///ADD/// Navigation Styles */
+/*Navigation Styles */
 
 header, header p {
   background-color: #1D3557;
@@ -123,6 +125,8 @@ header, header p {
 header {
   padding: 30px;
 }
+
+
 
 .menu a {
   background-color: #E63946;
@@ -165,15 +169,6 @@ body {
   padding: 0;
 }
 
-#welcome {
-  margin: 20px;
-}
-
-#breaking-news {
-  display: grid;
-  grid-row: 2;
-}
-
 /* Global Text Styles */
 
 h1, h2, h3, nav a {
@@ -200,8 +195,7 @@ blockquote {
 h2 {
   font-size: 25px;
   padding-top: 15px;
-  padding-bottom: 15px;
-  display: inline-block;
+  display: inline;
 }
 
 h3 {
@@ -218,7 +212,6 @@ h3 {
   color: #F1FAEE;
   margin: 10px;
   padding: 15px;
-  width: 400px;
   border: 0.5px solid black;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
@@ -234,10 +227,13 @@ h3 {
 #featured-articles section {
   border: 0.5px solid black;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-  width: 300px;
   margin: 15px;
   padding: 12px;
 }
+
+#alerts {
+    padding-top: 20px;
+  }
 
 /*Form Styles */
 form {
@@ -260,18 +256,33 @@ form button {
   color: #F1FAEE;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   width: 100%;
-  margin: 10px;
   padding: 15px;
   font-size: 20px;
 }
+
+input[type="checkbox"] {
+  width: 20px;  
+  height: 20px; 
+}
+
+input[type="text"], input[type="tel"] {
+  display: block;
+  width: 50%; 
+  height: 10px; 
+  font-size: 18px; 
+  padding: 10px; 
+}
+
+
 
 
 /* Footer Styles */
 footer {
   background-color: #1D3557;
   color: #F1FAEE;
-  padding: 20px;
+  padding: 50px;
 }
+
 
 .followLinks a {
   background-color: #E63946;
@@ -286,7 +297,7 @@ footer {
 .followLinks {
   display: flex;
   margin-bottom: 15px;
-  padding-top: 10px;
+  padding-top: 25px;
   Padding-bottom: 10px;
 }
 
@@ -296,13 +307,55 @@ small {
   font-size: 12px;
 }
 
-/* ///ADD/// medium styles 620px */
+
+/* medium styles 620px */
+@media screen and (min-width: 620px) {
+  #breaking-news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+  }
+
+  #breaking-news h2 {
+    grid-column: 1 / span 2;
+    padding-bottom: 10px;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  #featured-articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+  }
+
+  #featured-articles h2 {
+    grid-column: 1 / span 2;
+    padding-bottom: 10px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+}
+
+/* large styles 920px */
+@media screen and (min-width: 920px) {
+
+}
 
 
-/* ///ADD/// large styles 920px */
+/* x-large styles 1024px */
+@media screen and (min-width: 1024px) {
 
-
-/* ///ADD/// x-large styles 1024px */
+}
 
 
 /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
